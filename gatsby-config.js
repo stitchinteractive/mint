@@ -9,19 +9,19 @@ module.exports = {
     siteDescription:
       "A Gatsby starter using the latest Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
     siteImage: "/default-og-image.jpg",
-    twitter: "@gatsbyjs",
+    twitter: "@gatsbyjs"
   },
   flags: {
-    FAST_DEV: true,
+    FAST_DEV: true
   },
   plugins: [
     {
       resolve: "gatsby-source-shopify",
       options: {
-        password: process.env.SHOPIFY_SHOP_PASSWORD,
-        storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
-        shopifyConnections: ["collections"],
-      },
+        password: process.env.c05d478cac6989b2f020d46d7f307d79,
+        storeUrl: process.env.m-interior2022.myshopify.com,
+        shopifyConnections: ["collections"]
+      }
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -34,8 +34,8 @@ module.exports = {
     process.env.GOOGLE_ANALYTICS_ID && {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
-  ].filter(Boolean),
+        trackingId: process.env.GOOGLE_ANALYTICS_ID
+      }
+    }
+  ].filter(Boolean)
 }
