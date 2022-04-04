@@ -2,6 +2,7 @@ import * as React from "react"
 
 function Logo(props) {
   return (
+    /*
     <svg
       width={24}
       height={24}
@@ -16,6 +17,8 @@ function Logo(props) {
         fill="currentColor"
       />
     </svg>
+    */
+    <img src={"/logo.png"} alt="Logo" />
   )
 }
 
