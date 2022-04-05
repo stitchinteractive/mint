@@ -10,10 +10,10 @@
   display: grid;
   width: 100%;
   padding: var(--size-gap) var(--size-gutter);
-  grid-template-columns: 180px 1fr min-content min-content;
+  grid-template-columns: 230px 1fr min-content min-content;
   grid-template-areas: "logo nada searchButton cartButton" "navHeader navHeader navHeader navHeader";
   align-items: center;
-  background-color: var(--background);
+  background-color: var(--background-black);
 }
 
 .header::after {
