@@ -4,6 +4,7 @@ import { StoreContext } from "../context/store-context"
 import Logo from "../icons/logo"
 import { Navigation } from "./navigation"
 import { CartButton } from "./cart-button"
+import ProfileIcon from "../icons/profile"
 import SearchIcon from "../icons/search"
 import { Toast } from "./toast"
 import {
@@ -11,7 +12,7 @@ import {
   container,
   logo as logoCss,
   searchButton,
-  nav,
+  nav
 } from "./header.module.css"
 
 export function Header() {
@@ -32,6 +33,9 @@ export function Header() {
         <Navigation className={nav} />
         <Link to="/search" className={searchButton}>
           <SearchIcon />
+        </Link>
+        <Link to="/profile">
+          <ProfileIcon />
         </Link>
         <CartButton quantity={quantity} />
       </header>

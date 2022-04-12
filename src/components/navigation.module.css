@@ -1,6 +1,6 @@
 .navStyle {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
