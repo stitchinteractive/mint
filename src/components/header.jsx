@@ -8,6 +8,7 @@ import ProfileIcon from "../icons/profile"
 import SearchIcon from "../icons/search"
 import {
   header,
+  test,
   container,
   logo as logoCss,
   searchButton,
@@ -26,7 +27,7 @@ export function Header() {
   return (
     <div className={container}>
       <header className={header}>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link to="/">
               <Logo className="logo" />
@@ -43,29 +44,68 @@ export function Header() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-                <Link className="nav-link" to="/shop">
-                  Shop
-                </Link>
-                <Link className="nav-link" to="/about-us">
-                  About Us
-                </Link>
-                <Link className="nav-link" to="/lookbook">
-                  Lookbook
-                </Link>
-                <Link className="nav-link" to="/interior-design">
-                  Interior design
-                </Link>
-                <Link className="nav-link" to="/membership">
-                  Membership
-                </Link>
-                <Link className="nav-link" to="/blog">
-                  Blog
-                </Link>
-              </div>
+              <ul
+                className="navbar-nav w-100"
+                style={{ border: "1px solid red" }}
+              >
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/shop"
+                  >
+                    Shop
+                  </Link>
+                </li>
+              </ul>
+              <div className="{test}"></div>
+              <ul
+                className="navbar-nav w-100 justify-content-end"
+                style={{ border: "1px solid red" }}
+              >
+                <li className="nav-item">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/shop"
+                  >
+                    Shop
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" aria-current="page" to="/about-us">
+                    About Us
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" aria-current="page" to="/lookbook">
+                    Lookbook
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    aria-current="page"
+                    to="/interior-design"
+                  >
+                    Interior Design
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    aria-current="page"
+                    to="/membership"
+                  >
+                    Membership
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" aria-current="page" to="/blog">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./src/styles/reset.css"
 import "./src/styles/variables.css"
 import "./src/styles/global.css"
+import "bootstrap/dist/js/bootstrap.bundle.min"
 
 export const wrapRootElement = ({ element }) => (
   <StoreProvider>{element}</StoreProvider>
