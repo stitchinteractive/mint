@@ -6,7 +6,6 @@ import { Navigation } from "./navigation"
 import { CartButton } from "./cart-button"
 import ProfileIcon from "../icons/profile"
 import SearchIcon from "../icons/search"
-import { Toast } from "./toast"
 import {
   header,
   container,
@@ -27,46 +26,50 @@ export function Header() {
   return (
     <div className={container}>
       <header className={header}>
-        <Link to="/" className={logoCss}>
-          <Logo />
-        </Link>
-        <Navigation className={nav} />
-        <Link to="/search" className={searchButton}>
-          <SearchIcon />
-        </Link>
-        <Link to="/profile">
-          <ProfileIcon />
-        </Link>
-        <CartButton quantity={quantity} />
-      </header>
-      <Toast show={loading || didJustAddToCart}>
-        {!didJustAddToCart ? (
-          "Updating…"
-        ) : (
-          <>
-            Added to cart{" "}
-            <svg
-              width="14"
-              height="14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div className="container-fluid">
+            <Link to="/">
+              <Logo className="logo" />
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <path
-                d="M5.019 10.492l-2.322-3.17A.796.796 0 013.91 6.304L6.628 9.14a1.056 1.056 0 11-1.61 1.351z"
-                fill="#fff"
-              />
-              <path
-                d="M5.209 10.693a1.11 1.11 0 01-.105-1.6l5.394-5.88a.757.757 0 011.159.973l-4.855 6.332a1.11 1.11 0 01-1.593.175z"
-                fill="#fff"
-              />
-              <path
-                d="M5.331 7.806c.272.326.471.543.815.163.345-.38-.108.96-.108.96l-1.123-.363.416-.76z"
-                fill="#fff"
-              />
-            </svg>
-          </>
-        )}
-      </Toast>
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+                <Link className="nav-link" to="/shop">
+                  Shop
+                </Link>
+                <Link className="nav-link" to="/about-us">
+                  About Us
+                </Link>
+                <Link className="nav-link" to="/lookbook">
+                  Lookbook
+                </Link>
+                <Link className="nav-link" to="/interior-design">
+                  Interior design
+                </Link>
+                <Link className="nav-link" to="/membership">
+                  Membership
+                </Link>
+                <Link className="nav-link" to="/blog">
+                  Blog
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
     </div>
   )
 }
