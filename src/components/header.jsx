@@ -45,8 +45,8 @@ export function Header() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul
-                className="navbar-nav w-100"
-                style={{ border: "1px solid red" }}
+                className="navbar-nav w-100 justify-content-end"
+                style={{ border: "1px solid blue" }}
               >
                 <li className="nav-item">
                   <Link
@@ -58,7 +58,6 @@ export function Header() {
                   </Link>
                 </li>
               </ul>
-              <div className="{test}"></div>
               <ul
                 className="navbar-nav w-100 justify-content-end"
                 style={{ border: "1px solid red" }}

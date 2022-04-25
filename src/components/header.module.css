@@ -82,8 +82,3 @@
   top: 0;
   border: 1px solid red;
 }
-
-.test {
-  flex-basis: 100%;
-  height: 0;
-}
