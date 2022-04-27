@@ -3,6 +3,29 @@ body {
   color: var(--text-color);
 }
 
+/********** fonts **********/
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+  font-family: var(--font-headings);
+  font-size: var(--text-md);
+  font-weight: var(--semibold);
+  padding-bottom: var(--space-20);
+}
+
 .gatsby-image-wrapper {
   margin: auto;
 }

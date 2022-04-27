@@ -1,51 +1,90 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import Logo from "../icons/logo"
-import {
-  footerStyle,
-  copyright,
-  links,
-  blurb,
-  logos,
-  footerNavList,
-  footerNavListItem,
-} from "./footer.module.css"
+import FacebookIcon from "../icons/fb"
+import InstagramIcon from "../icons/ig"
+import VisaIcon from "../icons/visa"
+import MasterIcon from "../icons/master"
+import PaypalIcon from "../icons/paypal"
+import * as footerModule from "./footer.module.css"
 
 export function Footer() {
   return (
-    <footer className={footerStyle}>
-      <div className={blurb}>
-        <div className={logos}>
-          <Logo />
+    <footer>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-4">
+            <Link to="/">
+              <Logo className="logo" />
+            </Link>
+          </div>
+          <div className="col-md-2">
+            <h6>M.INT</h6>
+            <ul>
+              <li>
+                <Link to="/">Media</Link>
+              </li>
+              <li>
+                <Link to="/">FAQs</Link>
+              </li>
+              <li>
+                <Link to="/">Terms</Link>
+              </li>
+              <li>
+                <Link to="/">Privacy</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Customer Care</h6>
+            <ul>
+              <li>
+                <Link to="/">Shipping</Link>
+              </li>
+              <li>
+                <Link to="/">Exchange &amp; Returns</Link>
+              </li>
+              <li>
+                <Link to="/">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Socials</h6>
+            <ul className={footerModule.icons}>
+              <li>
+                <Link to="/">
+                  <FacebookIcon />
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <InstagramIcon />
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-2">
+            <h6>Payment Methods</h6>
+            <ul className={footerModule.icons}>
+              <li>
+                <Link to="/">
+                  <VisaIcon />
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <MasterIcon />
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <PaypalIcon />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <strong>gatsby-starter-shopify</strong> change this by editing{" "}
-        <code>src/components/footer.jsx</code>
-      </div>
-      <nav className={links} aria-label="footer">
-        <ul className={footerNavList}>
-          <li className={footerNavListItem}>
-            <a href="https://github.com/gatsbyjs/gatsby-starter-shopify">
-              Source Code and Docs
-            </a>
-          </li>
-          <li className={footerNavListItem}>
-            <a href="https://www.gatsbyjs.com/cloud/">About Gatsby Cloud</a>
-          </li>
-          {process.env.GATSBY_DEMO_STORE === "true" && (
-            <li className={footerNavListItem}>
-              <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-shopify&utm_campaign=shopify-starter">
-                <img
-                  src="https://www.gatsbyjs.com/deploynow.png"
-                  alt="Deploy to Gatsby Cloud"
-                  height="38"
-                  width="251"
-                />
-              </a>
-            </li>
-          )}
-        </ul>
-      </nav>
-      <div className={copyright}>
-        Copyright &copy; {new Date().getFullYear()} · All rights reserved
       </div>
     </footer>
   )

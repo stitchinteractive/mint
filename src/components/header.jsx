@@ -1,113 +1,69 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StoreContext } from "../context/store-context"
 import Logo from "../icons/logo"
-import { Navigation } from "./navigation"
-import { CartButton } from "./cart-button"
-import ProfileIcon from "../icons/profile"
 import SearchIcon from "../icons/search"
-import {
-  header,
-  test,
-  container,
-  logo as logoCss,
-  searchButton,
-  nav
-} from "./header.module.css"
+import ProfileIcon from "../icons/profile"
+import CartIcon from "../icons/cart"
+import * as headerModule from "./header.module.css"
 
 export function Header() {
-  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
-
-  const items = checkout ? checkout.lineItems : []
-
-  const quantity = items.reduce((total, item) => {
-    return total + item.quantity
-  }, 0)
-
   return (
-    <div className={container}>
-      <header className={header}>
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-          <div className="container-fluid">
-            <Link to="/">
-              <Logo className="logo" />
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul
-                className="navbar-nav w-100 justify-content-end"
-                style={{ border: "1px solid blue" }}
-              >
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    aria-current="page"
-                    to="/shop"
-                  >
-                    Shop
-                  </Link>
-                </li>
-              </ul>
-              <ul
-                className="navbar-nav w-100 justify-content-end"
-                style={{ border: "1px solid red" }}
-              >
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    aria-current="page"
-                    to="/shop"
-                  >
-                    Shop
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/about-us">
-                    About Us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/lookbook">
-                    Lookbook
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    aria-current="page"
-                    to="/interior-design"
-                  >
-                    Interior Design
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    aria-current="page"
-                    to="/membership"
-                  >
-                    Membership
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/blog">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
+    <div className={headerModule.container_header}>
+      <header className={headerModule.header}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-2 d-flex align-items-center">
+              <Link to="/">
+                <Logo className="logo" />
+              </Link>
+            </div>
+            <div className="col-md-10">
+              <div className="row">
+                <div className="col-md-12 d-flex justify-content-end">
+                  <ul className={headerModule.nav_link_icon}>
+                    <li>
+                      <Link to="/search">
+                        <SearchIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/profile">
+                        <ProfileIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/cart">
+                        <CartIcon />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-12 d-flex justify-content-end">
+                  <ul className={headerModule.nav_link}>
+                    <li>
+                      <Link to="/shop">Shop</Link>
+                    </li>
+                    <li>
+                      <Link to="/about-us">About Us</Link>
+                    </li>
+                    <li>
+                      <Link to="/lookbook">Lookbook</Link>
+                    </li>
+                    <li>
+                      <Link to="/interior-design">Interior Design</Link>
+                    </li>
+                    <li>
+                      <Link to="/membership">Membership</Link>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
       </header>
     </div>
   )
