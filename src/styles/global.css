@@ -45,7 +45,27 @@ h6 {
   font-family: var(--font-headings);
   font-size: var(--text-md);
   font-weight: var(--semibold);
-  padding-bottom: var(--space-20);
+  padding-bottom: var(--space-10);
+}
+
+.font_xs {
+  font-size: var(--text-xs);
+}
+
+.font_sm {
+  font-size: var(--text-sm);
+}
+
+.font_md {
+  font-size: var(--text-md);
+}
+
+.font_lg {
+  font-size: var(--text-lg);
+}
+
+.font_xl {
+  font-size: var(--text-xl);
 }
 
 /********** global **********/
@@ -86,6 +106,45 @@ p {
 
 .bg_grey {
   background: var(--grey-light);
+}
+
+.btn-outline-secondary {
+  border-radius: 0;
+  border: 1px solid var(--yellow);
+  border-width: 1px 1px 0 1px;
+  background: var(--yellow);
+  color: var(--white);
+  font-size: var(--text-sm);
+}
+
+.btn-outline-secondary:hover {
+  border-radius: 0;
+  border: 1px solid var(--grey-dark);
+  border-width: 1px 1px 0 1px;
+  background: var(--grey-dark);
+  color: var(--white);
+  font-size: var(--text-sm);
+}
+
+.textfield_underline {
+  background: transparent;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: var(--white);
+  font-size: var(--text-sm);
+}
+
+.textfield_underline:focus {
+  background: transparent;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: var(--yellow);
+  box-shadow: none;
+  border-color: var(--yellow);
 }
 
 /********** layout *********/

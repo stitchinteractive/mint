@@ -1,8 +1,13 @@
 footer {
   background: var(--grey-extra-dark);
   color: var(--white);
-  padding: var(--space-100) 0 var(--space-100) 0;
+  padding: var(--space-50) 0 var(--space-50) 0;
   letter-spacing: 0.8px;
+  text-align: center;
+}
+
+footer img {
+  margin: 0 auto 50px auto;
 }
 
 footer h6 {
@@ -11,7 +16,7 @@ footer h6 {
 
 footer ul {
   padding: 0;
-  margin: 0;
+  margin: 0 0 50px 0;
 }
 
 footer ul li {
@@ -19,6 +24,7 @@ footer ul li {
   margin: 0;
   list-style-type: none;
   font-weight: var(--medium);
+  font-size: var(--text-sm);
 }
 
 footer ul li a {
@@ -29,7 +35,64 @@ footer ul li a:hover {
   color: var(--grey);
 }
 
+footer ul.icons {
+  display: flex;
+  justify-content: center;
+}
+
 footer ul.icons li {
   float: left;
   padding-right: var(--space-10);
+}
+
+footer .terms a {
+  color: var(--grey-dark);
+  text-transform: uppercase;
+  font-weight: var(--medium);
+}
+
+footer .terms a:hover {
+  color: var(--grey);
+}
+
+footer .spacer {
+  margin: 0 30px 0 30px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/********** tablets  **********/
+@media (min-width: 768px) {
+  footer {
+    padding: var(--space-100) 0 var(--space-100) 0;
+    text-align: left;
+  }
+
+  footer ul.icons {
+    display: flex;
+    justify-content: left;
+  }
+
+  footer .terms {
+    text-align: center;
+  }
+}
+
+/********** extra large desktops **********/
+@media (min-width: 1200px) {
+  footer img {
+    margin: 0;
+  }
+
+  footer h6 {
+    margin-top: 10px;
+  }
+
+  footer ul li {
+    font-size: var(--text-md);
+  }
+
+  footer .terms {
+    text-align: right;
+  }
 }
