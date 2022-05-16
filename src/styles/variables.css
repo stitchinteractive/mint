@@ -17,8 +17,10 @@
   --grey-extra-dark: #464646;
   --grey-dark: #ccc6bd;
   --grey: #e6dfd5;
-  --grey-light: #fff7ec;
+  --grey-light: #f7f6f4;
   --white: #ffffff;
+  --yellow: #f3cd46;
+  --blue: #0e3244;
 
   /* radii */
   --radius-sm: 4px;
@@ -69,8 +71,10 @@
   --text-md: 16px;
   --text-lg: 18px;
   --text-xl: 20px;
-  --text-2xl: 24px;
-  --text-3xl: 32px;
+  --text-30: 30px;
+  --text-40: 40px;
+  --text-50: 50px;
+  --text-100: 100px;
 
   /* role-based tokens */
 

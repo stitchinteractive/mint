@@ -10,7 +10,11 @@ export function Layout({ children }) {
       <Seo />
       <SkipNavLink />
       <Header />
-      <SkipNavContent>{children}</SkipNavContent>
+      <div className="container-fluid">
+        <div className="content_padding">
+          <SkipNavContent>{children}</SkipNavContent>
+        </div>
+      </div>
       <Footer />
     </div>
   )

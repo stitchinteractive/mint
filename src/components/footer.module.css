@@ -2,6 +2,7 @@ footer {
   background: var(--grey-extra-dark);
   color: var(--white);
   padding: var(--space-100) 0 var(--space-100) 0;
+  letter-spacing: 0.8px;
 }
 
 footer h6 {
@@ -17,14 +18,15 @@ footer ul li {
   padding: var(--space-5) 0;
   margin: 0;
   list-style-type: none;
+  font-weight: var(--medium);
 }
 
 footer ul li a {
-  color: var(--grey);
+  color: var(--white);
 }
 
 footer ul li a:hover {
-  color: var(--white);
+  color: var(--grey);
 }
 
 footer ul.icons li {

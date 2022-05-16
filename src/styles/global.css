@@ -7,7 +7,25 @@ body {
 h1 {
 }
 
+h1.heading_boxed {
+  font-family: var(--font-headings);
+  font-weight: var(--semibold);
+  font-size: var(--text-50);
+  padding-bottom: var(--space-50);
+  line-height: var(--text-50);
+  width: var(--space-50);
+  height: var(--space-50);
+  background: var(--grey);
+  padding-left: 32px;
+  margin-right: 65px;
+}
+
 h2 {
+  font-family: var(--font-headings);
+  font-weight: var(--semibold);
+  font-size: var(--text-30);
+  padding-bottom: var(--space-70);
+  line-height: var(--text-50);
 }
 
 h3 {
@@ -17,6 +35,10 @@ h4 {
 }
 
 h5 {
+  font-family: var(--font-headings);
+  font-weight: var(--semibold);
+  font-size: var(--text-20);
+  padding-bottom: var(--space-20);
 }
 
 h6 {
@@ -26,10 +48,86 @@ h6 {
   padding-bottom: var(--space-20);
 }
 
+/********** global **********/
 .gatsby-image-wrapper {
   margin: auto;
 }
 
 .gatsby-image-wrapper [data-main-image] {
   border-radius: var(--radius-sm);
+}
+
+p {
+  padding-bottom: var(--space-30);
+}
+
+.pt-10 {
+  padding-top: var(--space-100);
+}
+
+.pb-10 {
+  padding-bottom: var(--space-100);
+}
+
+.btn-primary {
+  background: var(--yellow);
+  border: 0;
+  border-radius: 50px;
+  min-width: 300px;
+  height: 50px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: var(--semibold);
+}
+
+.btn-primary:hover {
+  background: var(--blue);
+}
+
+.bg_grey {
+  background: var(--grey-light);
+}
+
+/********** layout *********/
+.row_padding {
+  padding: 50px 15px;
+}
+
+/********** tablets **********/
+@media (min-width: 768px) {
+  h1.heading_boxed {
+    font-family: var(--font-headings);
+    font-weight: var(--semibold);
+    font-size: var(--text-100);
+    padding-bottom: var(--space-70);
+    line-height: var(--text-100);
+    width: var(--space-100);
+    height: var(--space-100);
+    background: var(--grey);
+    padding-left: 65px;
+    margin-right: 120px;
+  }
+
+  h2 {
+    font-family: var(--font-headings);
+    font-weight: var(--semibold);
+    font-size: var(--text-50);
+    padding-bottom: var(--space-70);
+    line-height: var(--text-100);
+  }
+
+  h5 {
+    font-family: var(--font-headings);
+    font-weight: var(--semibold);
+    font-size: var(--text-30);
+    padding-bottom: var(--space-20);
+  }
+
+  .row_padding {
+    padding: 100px;
+  }
+}
+
+/********** desktops **********/
+@media (min-width: 1024px) {
 }

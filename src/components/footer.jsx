@@ -11,33 +11,33 @@ import * as footerModule from "./footer.module.css"
 export function Footer() {
   return (
     <footer>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-2">
             <Link to="/">
               <Logo className="logo" />
             </Link>
           </div>
-          <div className="col-md-2">
-            <h6>M.INT</h6>
-            <ul>
+          <div className="col-lg-3">
+            <h6 class="text-uppercase">M.INT</h6>
+            <ul class="text-uppercase">
+              <li>
+                <Link to="/">Complimentary design service</Link>
+              </li>
+              <li>
+                <Link to="/">Min+modules configurator</Link>
+              </li>
               <li>
                 <Link to="/">Media</Link>
               </li>
-              <li>
-                <Link to="/">FAQs</Link>
-              </li>
-              <li>
-                <Link to="/">Terms</Link>
-              </li>
-              <li>
-                <Link to="/">Privacy</Link>
-              </li>
             </ul>
           </div>
-          <div className="col-md-2">
-            <h6>Customer Care</h6>
-            <ul>
+          <div className="col-lg-3">
+            <h6 class="text-uppercase">Customer Care</h6>
+            <ul class="text-uppercase">
+              <li>
+                <Link to="/">Faqs</Link>
+              </li>
               <li>
                 <Link to="/">Shipping</Link>
               </li>
@@ -49,23 +49,8 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-2">
-            <h6>Socials</h6>
-            <ul className={footerModule.icons}>
-              <li>
-                <Link to="/">
-                  <FacebookIcon />
-                </Link>
-              </li>
-              <li>
-                <Link to="/">
-                  <InstagramIcon />
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-2">
-            <h6>Payment Methods</h6>
+          <div className="col-lg-2">
+            <h6 class="text-uppercase">We Accept</h6>
             <ul className={footerModule.icons}>
               <li>
                 <Link to="/">
@@ -80,6 +65,21 @@ export function Footer() {
               <li>
                 <Link to="/">
                   <PaypalIcon />
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-2">
+            <h6 class="text-uppercase">Socials</h6>
+            <ul className={footerModule.icons}>
+              <li>
+                <Link to="/">
+                  <FacebookIcon />
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <InstagramIcon />
                 </Link>
               </li>
             </ul>
