@@ -13,9 +13,10 @@
   --grey-50: #78757a;
   --green-80: #088413;
   --green-50-rgb: 55, 182, 53;
-  --black: #1c1d1c;
+  --black: #1d1d1d;
   --grey-extra-dark: #464646;
   --grey-dark: #ccc6bd;
+  --grey-medium: #909090;
   --grey: #e6dfd5;
   --grey-light: #f7f6f4;
   --white: #ffffff;
@@ -46,6 +47,7 @@
   --space-80: 80px;
   --space-90: 90px;
   --space-100: 100px;
+  --space-150: 150px;
 
   /* line-height */
   --solid: 1;

@@ -30,16 +30,16 @@
   filter: brightness(0) invert(1);
 }
 
-.nav_link li {
+.nav_link li a {
   font-family: var(--font-body);
   font-weight: var(--medium);
-  color: var(--grey);
+  color: var(--grey-medium);
   font-size: var(--text-lg);
-  padding: 0 2.5rem 0 2.5rem;
+  padding: 0 5rem 0 5rem;
 }
 
-.nav_link li:last-child {
-  padding: 0 0 0 2.5rem;
+.nav_link li a:last-child {
+  padding: 0 0 0 5rem;
 }
 
 .nav_link a:hover {

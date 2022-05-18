@@ -92,7 +92,7 @@ export function Footer() {
                   <div className="input-group mb-1">
                     <input
                       type="text"
-                      className="form-control textfield_underline"
+                      className="form-control"
                       placeholder="Enter your email"
                       aria-label="Enter your email"
                       aria-describedby="basic-addon2"
