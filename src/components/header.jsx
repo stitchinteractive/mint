@@ -27,7 +27,7 @@ export function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/profile">
+                      <Link to="/login">
                         <ProfileIcon />
                       </Link>
                     </li>

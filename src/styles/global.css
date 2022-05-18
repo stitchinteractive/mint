@@ -115,6 +115,7 @@ p {
   background: var(--yellow);
   color: var(--white);
   font-size: var(--text-sm);
+  font-weight: var(--medium);
 }
 
 .btn-outline-secondary:hover {

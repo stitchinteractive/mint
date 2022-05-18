@@ -32,7 +32,7 @@
 
 .nav_link li {
   font-family: var(--font-body);
-  font-weight: var(--light);
+  font-weight: var(--medium);
   color: var(--grey);
   font-size: var(--text-lg);
   padding: 0 2.5rem 0 2.5rem;
@@ -44,6 +44,6 @@
 
 .nav_link a:hover {
   font-family: var(--font-body);
-  font-weight: var(--light);
+  font-weight: var(--medium);
   color: var(--white);
 }
