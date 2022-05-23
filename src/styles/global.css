@@ -191,7 +191,7 @@ h6 {
 }
 
 p {
-  padding-bottom: var(--space-30);
+  padding-bottom: 25px;
 }
 
 .pt-10 {
@@ -226,6 +226,14 @@ a:active {
 
 .row_padding_sides {
   padding: 0 15px;
+}
+
+.padding_lookbook {
+  padding: 100px 15px 80px 15px;
+}
+
+.padding_lookbook_lead_in {
+  padding: 100px 30px 0 30px;
 }
 
 /********** tablets **********/
@@ -281,11 +289,19 @@ a:active {
   }
 
   .row_padding {
-    padding: 100px 10%;
+    padding: 100px 0%;
   }
 
   .row_padding_sides {
-    padding: 0 10%;
+    padding: 0 15% 0 15%;
+  }
+
+  .padding_lookbook {
+    padding: 140px 15% 110px 15%;
+  }
+
+  .padding_lookbook_lead_in {
+    padding: 140px 15% 0 15%;
   }
 }
 
