@@ -262,6 +262,7 @@ a:active {
   h2 {
     font-size: var(--text-40);
     padding-bottom: var(--space-50);
+    line-height: 3rem;
   }
 
   h5 {

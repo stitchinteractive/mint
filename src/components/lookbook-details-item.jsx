@@ -10,7 +10,7 @@ export function LookBookDetailsItem(props) {
           <h2 class="text-uppercase">{props.area}</h2>
         </div>
       </div>
-      <div className="row row_padding_sides">
+      <div className="row row_padding_sides mb-5">
         <div className="col-12 col-md-6">
           <p>
             <img src={props.image_1} alt="{props.area}" />
