@@ -181,6 +181,30 @@ h6 {
   border-color: var(--yellow);
 }
 
+.txt_search {
+  border-radius: 0;
+  background: var(--grey);
+  font-family: var(--font-body);
+  font-weight: var(--bold);
+  color: var(--grey-medium);
+  font-size: var(--text-sm);
+  padding: 0.25rem 1rem;
+  width: 85%;
+}
+
+.btn_search {
+  border-radius: 0;
+  background: var(--grey);
+  width: 15%;
+}
+
+.txt_search:focus,
+.btn_search:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
 /********** global **********/
 .gatsby-image-wrapper {
   margin: auto;
@@ -306,7 +330,7 @@ a:active {
   }
 }
 
-/********** desktops **********/
+/********** tablets **********/
 @media (min-width: 768px) {
   .form-label {
     font-size: var(--text-md);
