@@ -1,4 +1,5 @@
-import * as React from "react"
+import React, { useEffect, useState, useRef } from "react"
+import { gsap } from "gsap"
 import { Link } from "gatsby"
 import Logo from "../icons/logo"
 import SearchIcon from "../icons/search"
@@ -71,7 +72,7 @@ export function Header() {
               </div>
             </div>
           </div>
-          <div className="row d-lg-none">
+          <div className="row d-none d-lg-none">
             <div className="col-10 offset-1">
               <div className="input-group my-3">
                 <input
