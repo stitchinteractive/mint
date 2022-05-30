@@ -226,6 +226,10 @@ h6 {
   box-shadow: none !important;
 }
 
+.text_indent {
+  padding-left: 80px;
+}
+
 /********** global **********/
 .gatsby-image-wrapper {
   margin: auto;
@@ -283,6 +287,12 @@ a:active {
 
 .padding_lookbook_lead_in {
   padding: 100px 30px 0 30px;
+}
+
+.container_lead_in {
+  background: var(--blue-light);
+  padding: 100px 50px;
+  margin-bottom: 50px;
 }
 
 /********** tablets **********/
@@ -353,11 +363,19 @@ a:active {
   .padding_lookbook_lead_in {
     padding: 140px 15% 0 15%;
   }
-}
 
-/********** tablets **********/
-@media (min-width: 768px) {
+  .container_lead_in {
+    padding: 150px 50px;
+    margin: 0 15px;
+    width: 33.33%;
+  }
+
   .form-label {
     font-size: var(--text-md);
+  }
+
+  .row-flex {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
