@@ -16,8 +16,8 @@ h6 {
 h1 {
   font-family: var(--font-headings);
   font-weight: var(--semibold);
-  font-size: var(--text-60);
-  padding-bottom: var(--space-40);
+  font-size: var(--text-30);
+  padding-bottom: var(--space-30);
   line-height: 1.8rem;
 }
 
@@ -82,6 +82,10 @@ h6 {
   font-size: var(--text-xl);
 }
 
+.font_white {
+  color: var(--white);
+}
+
 .text_vertical {
   font-family: var(--font-headings);
   font-weight: var(--semibold);
@@ -134,6 +138,23 @@ h6 {
 
 .btn-light:hover {
   background: var(--grey-dark);
+}
+
+.btn-outline {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--semibold);
+  border: 0;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: var(--white);
 }
 
 .btn-outline-secondary {
@@ -230,6 +251,10 @@ p {
   background: var(--grey-light);
 }
 
+.bg_black {
+  background: var(--black);
+}
+
 a {
   color: var(--black);
 }
@@ -245,7 +270,7 @@ a:active {
 
 /********** layout *********/
 .row_padding {
-  padding: 50px 15px;
+  padding: 150px 15px;
 }
 
 .row_padding_sides {
@@ -285,7 +310,7 @@ a:active {
 
   h2 {
     font-size: var(--text-40);
-    padding-bottom: var(--space-50);
+    padding-bottom: var(--space-20);
     line-height: 3rem;
   }
 
