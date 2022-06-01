@@ -9,6 +9,7 @@ import MenuIcon from "../icons/menu"
 import * as headerModule from "./header.module.css"
 
 export function Header() {
+  const [show, setShow] = useState(true)
   return (
     <div className={headerModule.container_header}>
       <header className={headerModule.header}>
@@ -39,9 +40,9 @@ export function Header() {
                       </Link>
                     </li>
                     <li className="d-lg-none">
-                      <Link to="/">
+                      <button onClick={() => setShow(!show)}>
                         <MenuIcon />
-                      </Link>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -72,42 +73,44 @@ export function Header() {
               </div>
             </div>
           </div>
-          <div className="row d-none d-lg-none">
-            <div className="col-10 offset-1">
-              <div className="input-group my-3">
-                <input
-                  type="text"
-                  className="form-control-sm txt_search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="search"
-                />
-                <button className="btn btn_search" type="button">
-                  <SearchIcon />
-                </button>
+          {show ? (
+            <div className="row">
+              <div className="col-10 offset-1">
+                <div className="input-group my-3">
+                  <input
+                    type="text"
+                    className="form-control-sm txt_search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="search"
+                  />
+                  <button className="btn btn_search" type="button">
+                    <SearchIcon />
+                  </button>
+                </div>
+                <ul className={headerModule.nav_link_mobile}>
+                  <li>
+                    <Link to="/">Shop</Link>
+                  </li>
+                  <li>
+                    <Link to="/about-us">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/lookbook">Lookbook</Link>
+                  </li>
+                  <li>
+                    <Link to="/interior-design">Interior Design</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Membership</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Blog</Link>
+                  </li>
+                </ul>
               </div>
-              <ul className={headerModule.nav_link_mobile}>
-                <li>
-                  <Link to="/">Shop</Link>
-                </li>
-                <li>
-                  <Link to="/about-us">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/lookbook">Lookbook</Link>
-                </li>
-                <li>
-                  <Link to="/interior-design">Interior Design</Link>
-                </li>
-                <li>
-                  <Link to="/">Membership</Link>
-                </li>
-                <li>
-                  <Link to="/">Blog</Link>
-                </li>
-              </ul>
             </div>
-          </div>
+          ) : null}
         </div>
       </header>
     </div>
