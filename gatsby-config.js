@@ -17,18 +17,18 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-source-shopify",
+      /*
       options: {
         password: process.env.SHOPIFY_APP_PASSWORD,
         storeUrl: process.env.GATSBY_MYSHOPIFY_URL,
         shopifyConnections: ["collections"]
       }
-      /*
+      */
       options: {
         password: "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",
         storeUrl: "m-interior2022.myshopify.com",
         shopifyConnections: ["collections"]
       }
-      */
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
