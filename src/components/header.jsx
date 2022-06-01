@@ -24,7 +24,7 @@ export function Header() {
                 <div className="col-md-12 d-flex justify-content-end">
                   <ul className={headerModule.nav_link_icon}>
                     <li className="d-none d-lg-block">
-                      <Link to="/search">
+                      <Link to="/">
                         <SearchIcon />
                       </Link>
                     </li>
@@ -50,7 +50,7 @@ export function Header() {
                 <div className="col-12 col-md-12 d-flex justify-content-end">
                   <ul className={headerModule.nav_link}>
                     <li>
-                      <Link to="/shop">Shop</Link>
+                      <Link to="/">Shop</Link>
                     </li>
                     <li>
                       <Link to="/about-us">About Us</Link>
@@ -62,10 +62,10 @@ export function Header() {
                       <Link to="/interior-design">Interior Design</Link>
                     </li>
                     <li>
-                      <Link to="/membership">Membership</Link>
+                      <Link to="/">Membership</Link>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
+                      <Link to="/">Blog</Link>
                     </li>
                   </ul>
                 </div>
@@ -88,7 +88,7 @@ export function Header() {
               </div>
               <ul className={headerModule.nav_link_mobile}>
                 <li>
-                  <Link to="/shop">Shop</Link>
+                  <Link to="/">Shop</Link>
                 </li>
                 <li>
                   <Link to="/about-us">About Us</Link>
@@ -100,10 +100,10 @@ export function Header() {
                   <Link to="/interior-design">Interior Design</Link>
                 </li>
                 <li>
-                  <Link to="/membership">Membership</Link>
+                  <Link to="/">Membership</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/">Blog</Link>
                 </li>
               </ul>
             </div>
