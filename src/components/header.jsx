@@ -74,7 +74,7 @@ export function Header() {
             </div>
           </div>
           {show ? (
-            <div className="row">
+            <div className="row d-lg-none">
               <div className="col-10 offset-1">
                 <div className="input-group my-3">
                   <input
