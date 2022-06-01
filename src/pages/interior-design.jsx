@@ -8,9 +8,9 @@ import { LookBookDetailsItem } from "../components/lookbook-details-item"
 const InteriorDesignDetails = () => {
   return (
     <Layout>
-      <div className="row">
-        <div className="row padding_lookbook_lead_in">
-          <div className="col-5">
+      <div className="row_padding_sides">
+        <div className="row row_padding">
+          <div className="col-md-5">
             <h2 class="text-uppercase">Treescape condo, 4-room sadsdsadsdsa</h2>
             <h5 class="text-uppercase">Modern Contemporary</h5>
             <p>
@@ -24,13 +24,13 @@ const InteriorDesignDetails = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <img src="/floor_plan.jpg" alt="Floor Plan" />
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="bg_grey">
+      <div className="row_padding_sides bg_grey">
+        <div className="row row_padding">
           <LookBookDetailsItem
             image_1="/lookbook/living_room/1.jpg"
             image_2="/lookbook/living_room/2.jpg"

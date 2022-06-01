@@ -26,7 +26,7 @@ export function LookBookItem(props) {
               </Link>
             </p>
           </div>
-          <div className="align-self-end">
+          <div className="align-self-end d-none d-md-block">
             <p>
               <img src={props.image_small} alt="{props.area}" />
             </p>

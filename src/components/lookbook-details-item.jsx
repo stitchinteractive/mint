@@ -5,12 +5,12 @@ import * as React from "react"
 export function LookBookDetailsItem(props) {
   return (
     <div>
-      <div className="row padding_lookbook_lead_in">
+      <div className="row">
         <div className="col-12">
           <h2 class="text-uppercase">{props.area}</h2>
         </div>
       </div>
-      <div className="row row_padding_sides mb-5">
+      <div className="row mb-5">
         <div className="col-12 col-md-6">
           <p>
             <img src={props.image_1} alt="{props.area}" />
