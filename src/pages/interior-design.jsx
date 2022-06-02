@@ -25,20 +25,20 @@ const InteriorDesignDetails = () => {
             </p>
           </div>
           <div className="col-md-7">
-            <img src="/floor_plan.jpg" alt="Floor Plan" />
+            <img src="/interior/living_room/floor_plan.jpg" alt="Floor Plan" />
           </div>
         </div>
       </div>
       <div className="row_padding_sides bg_grey">
         <div className="row row_padding">
           <LookBookDetailsItem
-            image_1="/lookbook/living_room/1.jpg"
-            image_2="/lookbook/living_room/2.jpg"
-            image_3="/lookbook/living_room/3.jpg"
-            image_4="/lookbook/living_room/4.jpg"
-            image_5="/lookbook/living_room/5.jpg"
-            image_6="/lookbook/living_room/6.jpg"
-            image_7="/lookbook/living_room/7.jpg"
+            image_1="/interior/living_room/1.jpg"
+            image_2="/interior/living_room/2.jpg"
+            image_3="/interior/living_room/3.jpg"
+            image_4="/interior/living_room/4.jpg"
+            image_5="/interior/living_room/5.jpg"
+            image_6="/interior/living_room/6.jpg"
+            image_7="/interior/living_room/7.jpg"
           ></LookBookDetailsItem>
         </div>
       </div>

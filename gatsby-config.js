@@ -17,16 +17,9 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-source-shopify",
-      /*
       options: {
         password: process.env.SHOPIFY_APP_PASSWORD,
         storeUrl: process.env.GATSBY_MYSHOPIFY_URL,
-        shopifyConnections: ["collections"]
-      }
-      */
-      options: {
-        password: "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",
-        storeUrl: "m-interior2022.myshopify.com",
         shopifyConnections: ["collections"]
       }
     },
@@ -35,14 +28,16 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-gatsby-cloud"
     // Add your Google Analytics ID to the .env file to enable
     // Otherwise, this plugin can be removed
+    /*
     process.env.GOOGLE_ANALYTICS_ID && {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID
       }
     }
+    */
   ].filter(Boolean)
 }
